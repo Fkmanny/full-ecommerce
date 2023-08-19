@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.urbanist{
+    font-family: 'Urbanist', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+
+.width-70{
+    width: 70vw;
+}
+
+@font-face {
+    font-family: AoenikLight;
+    src: url(./assets/font/AeonikTRIAL-Light.otf)format('opentype');;
+}
+@font-face {
+    font-family: AoenikRegular;
+    src: url(./assets/font/AeonikTRIAL-Regular.otf)format('opentype');;
+}
+@font-face {
+    font-family: AoenikBold;
+    src: url(./assets/font/AeonikTRIAL-Bold.otf)format('opentype');;
+}
+@font-face {
+    font-family: MadeMellowLight;
+    src: url(./assets/font/MADEMellowPERSONALUSE-Light.otf)format('opentype');;
+}
+@font-face {
+    font-family: MadeMellowRegular;
+    src: url(./assets/font/MADEMellowPERSONALUSE-Regular.otf)format('opentype');;
+}
+@font-face {
+    font-family: MadeMellowBold;
+    src: url(./assets/font/MADEMellowPERSONALUSE-Bold.otf)format('opentype');;
+}
+@font-face {
+    font-family: MadeMellowMedium;
+    src: url(./assets/font/MADEMellowPERSONALUSE-Medium.otf)format('opentype');;
+}
+
+h1{
+    font-family: MadeMellowMedium;
+}
+
+h3{
+    font-family: AoenikRegular;
+}
+.h3{
+    color: #515251;
+}
+
+.AoenikBold{
+    font-family: AoenikBold;
+}
+.AoenikRegular{
+    font-family: AoenikRegular;
+}
+.MadeMellowBold{
+    font-family: MadeMellowBold;
+}
+
+.text_white{
+    color: white !important;
+}
+
+.orange-red{
+    background-color: orangered;
+}
+
+.mContainer{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+}
+.loader {
+    position: absolute;
+    text-align: center;    
+    width: 100vw;
+    height: 100vh;
+    z-index: 200;
+    top: 200px;
+    backdrop-filter: blur(7px);
+}
+.loader span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 27px;
+    height: 27px;
+    background: black;
+    border-radius: 20px;
+    animation: loader 0.8s infinite alternate;
+    margin-right: 2px;
+}
+.loader span:nth-of-type(2) {
+    animation-delay: 0.2s;
+}
+.loader span:nth-of-type(3) {
+    animation-delay: 0.6s;
+}
+@keyframes loader {
+  0% {
+    opacity: 0.9;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 0.1;
+    transform: scale(1);
+  }
+}
